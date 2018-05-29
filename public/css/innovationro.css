@@ -1,0 +1,117 @@
+a, a:link, a:visited, a:hover
+{
+	color: inherit;
+	text-decoration: none;
+}
+
+body
+{
+	background-color: #eeeeee;
+	margin: 0px;
+	padding: 0px;	
+}
+
+.border-black
+{
+	border: 1px solid black;
+}
+
+.topo
+{
+	/*border: 1px solid black;*/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+
+.opcao-top
+{
+	font-size: 18px;
+}
+
+.opcao-top:hover
+{
+	color: #4E7288;
+}
+
+.border-right-dashed
+{
+	border-right: 1px dashed #4E7288;
+}
+
+.banner-mid
+{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	background-image: url(../img/background_dark5.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-box-shadow: 0px 0px 100px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 100px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 100px 0px rgba(0,0,0,0.75);
+}
+
+.margin-top-10
+{
+	margin-top: 10px;
+}
+
+.height-35
+{
+	height: 35px;
+}
+
+.height-350
+{
+	height: 350px;
+}
+
+.margin-top-25
+{
+	margin-top: 25px;
+}
+
+@media all and (max-width: 2000px) and (min-width: 768px) {
+		
+	.menu-lateral
+	{
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: auto;
+		display: block;
+		height: 100vh;
+		z-index: 30;
+	}
+
+	.conteudo-principal
+	{
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+/* =Media Queries
+-------------------------------------------------------------- */
+@media all and (max-width: 768px) {
+	
+	.menu-lateral
+	{
+		width: 100%;
+	}
+
+	.conteudo-principal
+	{
+		
+	}
+}
+
+@media all and (max-width: 600px) {
+	
+	
+}
