@@ -24,6 +24,8 @@ Route::get('/', function () {
 // Só pra ficar mais simples
 
 Route::get('/register', 'RegisterController@list');
+Route::get('/register/create', 'RegisterController@create');
+Route::post('/register/store', 'RegisterController@store');
 
 Route::get('/user',function() {
     return view('welcome');

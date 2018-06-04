@@ -31,7 +31,7 @@ class RegisterController extends Controller
      */
     public function create()
     {
-        //
+        return view('form_register');
     }
 
     /**
@@ -42,7 +42,24 @@ class RegisterController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $register = new \App\Register;
+
+        $request -> validate ([
+            'register_name' => 'required'
+        ]);
+        
+        /*
+        $register -> register_name = '';
+        $register -> register_adress = '';
+        $register -> register_contact = '';
+        $register -> register_type = '';
+        $register -> save ();
+        */
+        
+        $register -> create ($request->all());
+        session()->flash('message','Cadastrado com sucesso');
+
+        return back();
     }
 
     /**
